@@ -16,7 +16,6 @@
             h1 {
                 margin: 0;
                 font-family: 'Barlow', sans-serif;
-                font-size: 3rem;
                 font-weight: 900;
                 color: linear-gradient(45deg, #101010, #462749);
             }
@@ -25,14 +24,12 @@
                 margin: 0;
                 padding: 0.5rem 0;
                 color: #462749;
-                font-size: 1.2rem;
                 font-weight: 100;
                 font-family: 'Barlow', sans-serif;
             }
         }
 
         .botoncito {
-            padding: 3rem 0rem;
             width: 100%;
             align-items: center;
             justify-content: center;
@@ -70,10 +67,6 @@
         
             .btn:hover::before {
                 width: 160%;
-            }
-
-            .two {
-                margin-left: 200px;
             }
         }
     }

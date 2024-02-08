@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -32,7 +34,6 @@
 .main .container .text h1 {
   margin: 0;
   font-family: "Barlow", sans-serif;
-  font-size: 3rem;
   font-weight: 900;
   color: linear-gradient(45deg, #101010, #462749);
 }
@@ -40,12 +41,10 @@
   margin: 0;
   padding: 0.5rem 0;
   color: #462749;
-  font-size: 1.2rem;
   font-weight: 100;
   font-family: "Barlow", sans-serif;
 }
 .main .container .botoncito {
-  padding: 3rem 0rem;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -80,9 +79,6 @@
 }
 .main .container .botoncito .btn:hover::before {
   width: 160%;
-}
-.main .container .botoncito .two {
-  margin-left: 200px;
 }
 
 .about {
@@ -189,4 +185,171 @@
   height: 24px;
   width: 24px;
   background-color: #E7E7E7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main {
+  background: linear-gradient(45deg, #8332AC, #E086D3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.main .container .text h1 {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  color: linear-gradient(45deg, #101010, #462749);
+}
+.main .container .text h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #462749;
+  font-weight: 100;
+  font-family: "Barlow", sans-serif;
+}
+.main .container .botoncito {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .botoncito .btn {
+  position: absolute;
+  text-decoration: none;
+  border: 2px solid #E7E7E7;
+  color: #E7E7E7;
+  padding: 10px 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  background: transparent;
+  transition: 1s;
+  overflow: hidden;
+  z-index: 1;
+}
+.main .container .botoncito .btn:hover {
+  color: #8332AC;
+}
+.main .container .botoncito .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 0;
+  height: 100%;
+  transform: skewX(45deg);
+  background: #E7E7E7;
+  z-index: -1;
+  transition: 1s;
+}
+.main .container .botoncito .btn:hover::before {
+  width: 160%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #242424, #101010);
+}
+.about .utiles {
+  position: absolute;
+  max-width: 40%;
+}
+.about .grid {
+  margin: 0.5rem;
+  z-index: 1;
+}
+.about .grid .row {
+  justify-content: space-between;
+  margin: 20% 0rem;
+}
+.about .grid .row .col-sm-4 h6 {
+  background: linear-gradient(45deg, #E086D3, #8332AC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.about .grid .row .col-sm-4 p {
+  color: #E7E7E7;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 741px) {
+  .main .container .text h1 {
+    font-size: 1.3rem;
+  }
+  .main .container .text h2 {
+    font-size: 0.9rem;
+  }
+  .main .botoncito {
+    padding: 0.7rem 0rem;
+  }
+  .main .botoncito .btn {
+    font-size: 10px;
+  }
+  .main .botoncito .two {
+    margin-left: 150px;
+  }
+  .about .utiles {
+    display: none;
+  }
+  .about .grid {
+    margin: 0.2rem;
+  }
+  .about .grid .row .col-sm-4 h6 {
+    font-size: 0.9rem;
+  }
+  .about .grid .row .col-sm-4 p {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 742px) {
+  .main .container .text h1 {
+    font-size: 3rem;
+  }
+  .main .container .text h2 {
+    font-size: 1.2rem;
+  }
+  .main .botoncito {
+    padding: 3rem 0rem;
+  }
+  .main .botoncito .two {
+    margin-left: 200px;
+  }
+  .about .utiles {
+    position: absolute;
+    max-width: 40%;
+  }
+  .about .grid {
+    margin: 0.5rem;
+  }
+  .about .grid .row .col-sm-4 h6 {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

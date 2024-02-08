@@ -1,0 +1,95 @@
+@import "index.scss";
+@import "../utilities/variables.scss";
+@import "../utilities/mixins";
+@import "../base/fonts.scss";
+@import "../base/reset.scss";
+
+@media (max-width: 741px) {
+    .main {
+        .container {
+            .text {
+                h1 {
+                    font-size: 1.3rem;
+                }
+
+                h2 {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .botoncito {
+            padding: .7rem 0rem;
+
+            .btn {
+                font-size: 10px;
+            }
+
+            .two {
+                margin-left:150px;
+            }
+        }
+    }
+
+    .about {
+        .utiles {
+            display: none;
+        }
+        .grid {
+            margin: .2rem;
+
+            .row {
+                .col-sm-4 {
+                    h6 {
+                        font-size: .9rem;
+                    }
+
+                    p {
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 742px) {
+    .main {
+        .container {
+            .text {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .botoncito {
+            padding: 3rem 0rem;
+
+            .two {
+                margin-left: 200px;
+            }
+        }
+    }
+
+    .about {
+        .utiles {
+            position: absolute;
+            max-width: 40%;
+        }
+        .grid {
+            margin: .5rem;
+
+            .row {
+                .col-sm-4 {
+                    h6 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
