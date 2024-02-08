@@ -1,10 +1,13 @@
 @import "../utilities/variables.scss";
 @import "../utilities/mixins";
+@import "../base/fonts.scss";
+@import "../base/reset.scss";
 
 .navbar {
     width: 100%;
     @include flex(row, space-between, center);
-    background-color: $c1;
+    background-color: $c5;
+    position: absolute;
 
     .navbar-brand {
         font-family: 'Barlow', sans-serif;
@@ -12,6 +15,15 @@
         color: black;
     }
 
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .active {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 
     .icons {
         @include flex(row, center, center);
@@ -26,7 +38,7 @@
             height: 100%;
             width: 100%;
             transition: .5s ease-in-out;
-            background: $c1;
+            background: $c5;
             outline: none;
             padding: 0 5%;
             color: black;
@@ -42,7 +54,7 @@
             height: 40px;
             width: 100%;
             padding: 0 5%;
-            background-color: $c1;
+            background-color: $c5;
         }
 
         .navbar-toggler-icon{
@@ -60,7 +72,7 @@
             z-index: 10;
             height: 24px;
             width: 24px;
-            background-color: $c1;
+            background-color: $c5;
         }
 
     }

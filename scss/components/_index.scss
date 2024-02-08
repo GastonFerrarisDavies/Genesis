@@ -1,0 +1,116 @@
+@import "../utilities/variables.scss";
+@import "../utilities/mixins";
+@import "../base/fonts.scss";
+@import "../base/reset.scss";
+
+.main {
+    background: linear-gradient(45deg,#8332AC, #E086D3,);
+    @include flex (column, center, center);
+    height: 100vh;
+
+    .container {
+        @include flex (column, center, center);
+        text-align: left;
+        
+        .text {
+            h1 {
+                margin: 0;
+                font-family: 'Barlow', sans-serif;
+                font-size: 3rem;
+                font-weight: 900;
+                color: linear-gradient(45deg, #101010, #462749);
+            }
+    
+            h2 {
+                margin: 0;
+                padding: 0.5rem 0;
+                color: #462749;
+                font-size: 1.2rem;
+                font-weight: 100;
+                font-family: 'Barlow', sans-serif;
+            }
+        }
+
+        .botoncito {
+            padding: 3rem 0rem;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .btn {
+                position: absolute;
+                text-decoration: none;
+                border: 2px solid $c5;
+                color: $c5;
+                padding: 10px 20px;
+                font-family: 'Barlow', sans-serif;
+                font-weight: 900;
+                background: transparent;
+                transition: 1s;
+                overflow: hidden;
+                z-index: 1;
+            }
+        
+            .btn:hover {
+                color: $c2;
+            }
+        
+            .btn::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -40px;
+                width: 0;
+                height: 100%;
+                transform: skewX(45deg);
+                background: $c5;
+                z-index: -1;
+                transition: 1s;
+            }
+        
+            .btn:hover::before {
+                width: 160%;
+            }
+
+            .two {
+                margin-left: 200px;
+            }
+        }
+    }
+}
+
+.about {
+    @include flex (column, center, center);
+    height: 100vh;
+    background: linear-gradient(to bottom, #242424, #101010);
+
+    .utiles {
+        position: absolute;
+        max-width: 40%;
+    }
+    .grid {
+        margin: .5rem;
+        z-index: 1;
+        .row {
+            justify-content: space-between;
+            margin: 20% 0rem;
+            .col-sm-4 {
+                h6 {
+                    background: linear-gradient(45deg, $c1, $c2);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    font-size: 1.1rem;
+                    font-weight: 900;
+                }
+
+                p {
+                    color: $c5;
+                    font-size: .9rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
