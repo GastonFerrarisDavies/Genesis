@@ -89,12 +89,7 @@
   height: 100vh;
   background: linear-gradient(to bottom, #242424, #101010);
 }
-.about .utiles {
-  position: absolute;
-  max-width: 40%;
-}
 .about .grid {
-  margin: 0.5rem;
   z-index: 1;
 }
 .about .grid .row {
@@ -106,12 +101,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 1.1rem;
   font-weight: 900;
 }
 .about .grid .row .col-sm-4 p {
   color: #E7E7E7;
-  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -267,12 +260,7 @@
   height: 100vh;
   background: linear-gradient(to bottom, #242424, #101010);
 }
-.about .utiles {
-  position: absolute;
-  max-width: 40%;
-}
 .about .grid {
-  margin: 0.5rem;
   z-index: 1;
 }
 .about .grid .row {
@@ -284,12 +272,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 1.1rem;
   font-weight: 900;
 }
 .about .grid .row .col-sm-4 p {
   color: #E7E7E7;
-  font-size: 0.9rem;
   font-weight: 300;
 }
 
