@@ -1,0 +1,27 @@
+@import "../utilities/variables.scss";
+@import "../utilities/mixins";
+@import "../base/fonts.scss";
+@import "../base/reset.scss";
+
+.footer {
+    padding: 2rem;
+    background: linear-gradient(45deg,#8332AC, #E086D3,);
+    @include flex (row, space-around, center);
+    font-family: 'Barlow', sans-serif;
+    color: $c5;
+
+    h7 {
+        font-weight: 900;
+    }
+
+    .izq {
+        @include flex (column, center, left);
+        max-width: 50%;
+    }
+
+    .der {
+        li:hover {
+            color: $c2;
+        }
+    }
+}
